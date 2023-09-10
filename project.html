@@ -1,0 +1,217 @@
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>islamic content </title>
+</head>
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+ 
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+  
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.love
+{ 
+    display: flex;
+    justify-content: space-between;
+    background-color:dimgrey ;
+
+
+
+}
+
+
+
+
+header {
+    
+  background-repeat: no-repeat;
+     padding: 0px;
+	margin: 2px;
+    background-color: rgb(140, 167, 160);
+  
+	color: #0a0409e5;
+	
+}
+
+
+
+
+nav ul {
+  
+    padding: 23px;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+</style> 
+<body>
+    <header>
+        <center> <h1>WELCOME TO ISLAMIC CONTENT</h1></center>
+        <div style =" float: right;"class="search">
+            <input type="text" placeholder="search">
+            <button type="submit">Search</button>
+        </div>
+         <nav >
+          
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+           </nav>
+            </header>
+      <main>    
+        
+           <section style="background-image: url(https://i.pinimg.com/originals/99/de/bc/99debce1519a4235972f75a102220f5b.jpg);max-height: fit-content;" id="#">
+            
+            <center>
+            <form action="process_registration.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+        
+                <input type="submit" value="Register">
+                <form action="/signup" method="get">
+                <button type="submit">signup</button>
+            </form></center>
+        </section>
+
+<br>
+<section id="QURAN FLASHES">
+    <center><h3 style="color: rgb(236, 137, 16) ;">QURAN FLASHES</h3></center>
+     <p>
+        <figure><figcaption>In the Quran, ‘sign’ refers to the creation of the universe, phenomena that influence life on the earth like night, plants, day and rainfall. ‘Miracles’ refer to the rewards that believers and non-believers receive with respect to their actions. In many instances, it also refers to the fate of the people.</figcaption>
+            <img src="https://i.pinimg.com/originals/61/4c/14/614c14baa40efd1c4a53613bc09c3a2e.jpg" alt="" height="300px" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTnxUhLanfdDIcTkK2JviG0Mr_0PJu4DTOmu7pYNNNy7JYlU0FNNjKlN8W9FmiWzv4_HM&usqp=CAU" alt="" height="300px">
+            <img src="https://i.pinimg.com/originals/8f/50/a0/8f50a09af440c546b858e9df8d446f74.jpg" alt="" height="300px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfTZbawpTy3ekhIjzpRPOBi5IuVoCwI7esRa6UxjxopUivQwoFrsdkUs8MYvaGo8965VU&usqp=CAU" alt="" height="300px">
+            
+        </figure>
+    </p>
+</section>
+
+<section id="QURAN QUIZ">
+    <center><h1 style="color:darkorange;" >Quran Quiz</h1></center>
+    <form id="quizForm">
+        <ol>
+            <li>
+                <p>What is the holy book of Islam?</p>
+                <input type="radio" name="q1" value="a"> Quran<br>
+                <input type="radio" name="q1" value="b"> Bible<br>
+                <input type="radio" name="q1" value="c"> Torah<br>
+            </li>
+            <li>
+                <p>Who is considered the final prophet in Islam?</p>
+                <input type="radio" name="q2" value="a"> Moses<br>
+                <input type="radio" name="q2" value="b"> Jesus<br>
+                <input type="radio" name="q2" value="c"> Muhammad<br>
+            </li>
+            <li>
+                <p>What is the name of the pilgrimage to Mecca that every Muslim must undertake at least once in their lifetime?</p>
+                <input type="radio" name="q3" value="a"> Ramadan<br>
+                <input type="radio" name="q3" value="b"> Eid al-Fitr<br>
+                <input type="radio" name="q3" value="c"> Hajj<br>
+            </li>
+            <li>
+                <p>What is the month during which fasting is observed by Muslims?</p>
+                <input type="radio" name="q4" value="a"> Shawwal<br>
+                <input type="radio" name="q4" value="b"> Dhul-Hijjah<br>
+                <input type="radio" name="q4" value="c"> Ramadan<br>
+            </li>
+            <li>
+                <p>What is the Islamic declaration of faith, bearing witness to the oneness of Allah?</p>
+                <input type="radio" name="q5" value="a"> Shahada<br>
+                <input type="radio" name="q5" value="b"> Salat<br>
+                <input type="radio" name="q5" value="c"> Zakat<br>
+            </li>
+        </ol>
+        <center><input type="submit" value="Submit">
+              
+             <form action="/restart" method="get">
+                <button type="restart">restart</button>
+               
+        </center>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const answers = ['a', 'c', 'c', 'c', 'a']; // Correct answers
+
+            let score = 0;
+            for (let i = 1; i <= 5; i++) {
+                const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === answers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `You scored ${score} out of 5.`;
+
+        });
+    </script>
+</section>
+   
+
+ 
+
+
+    <div class="love"> 
+        <section id="services">
+            <center><h2 style="color: darkorange;">Services</h2></center>
+             <ul>
+                 <li><a href="#QURAN FLASHES ">QURAN FLASHES</a></li>
+                 <li><a href="#QURAN VERSE">QURAN VERSE</a> </li>
+                 <li><a href="#QURAN QUIZ ">QURAN QUIZ </a></li>
+             </ul>
+         </section>     
+    <section " id="about">
+       <center><h2 style="color: darkorange;">About Us</h2></center>
+        <p>Welcome to our platform dedicated to Islamic knowledge and spirituality.<br> We are passionate about sharing the beauty and wisdom of Islam with the world. Our mission is to provide you with insightful articles, <br> educational resources, and spiritual guidance that promote a deeper understanding of Islamic principles, history, and culture.<br> Join us on this journey of learning and enlightenment as <br> we explore the rich tapestry of Islam and its profound impact on our lives</p>
+    </section>
+<section  id="contact">
+        <h2 style="color: darkorange; ">Contact Us</h2>
+        <p>Email: contact@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+    <a href="www.facebook.com" target="_blank"><img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png"height="20px" alt="Facebook"></a>
+    <a href="#" target="_blank"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" height="20px" alt="Twitter"></a>
+    <a href="#" target="_blank"><img src="https://img.freepik.com/premium-vector/instagram-app-icon-social-media-logo-vector-illustration_277909-403.jpg?w=2000"height="20px" alt="Instagram"></a>
+
+    </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 ISLAMIC CONTENT.com</p>
+    </footer>
+</body>
+</html>
